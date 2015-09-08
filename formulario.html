@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+	<title>Contacto</title>
+</head>
+<body>
+	<header>
+		<h1>Contacto</h1>
+	</header>
+	<form action="http://andreihelo-sinatra.herokuapp.com/contact">
+		<fieldset>
+		<legend>Datos</legend>
+			Nombre:
+			<br><input type="text" name="nombre"><br>
+			Sexo:	
+			<br><input type="radio" value="masculino">Masculino
+			<br><input type="radio" value="femenino">Femenino<br>
+			Fecha de nacimiento:
+			<br><input type="text" name="fecha" value="dd/mm/aaaa"><br>
+			Ciudad de origen:
+			<br><select name="ciudad">
+			<option value="Seleccione">Seleccione</option>
+			<option value="chihuahua">Chihuahua</option>
+			<option value="guadalajara">Guadalajara</option>
+			<option value="df">Distrito Federal</option>
+			<br>
+			</select>
+			</fieldset>
+			<fieldset>
+			<legend>Gustos</legend>
+				Seleccione uno o más:
+				<br><input type="checkbox" name="op 1">Me gusta programar más de una hr. al día.
+				<br><input type="checkbox" name="op 1">Tengo al menos una consola y más de un juego.
+				<br><input type="checkbox" name="op 1">Leo sobre los ultimos gadgets del momento.
+				<br>Escribenos:
+				<br><textarea cols="50" rows="5" onfocus="">Cuentame que te sucede...</textarea>
+				<br><input type="submit" value="Enviar">
+			</fieldset>
+		</form>
+</body>
+</html>
